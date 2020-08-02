@@ -1,0 +1,1 @@
+web: gunicorn SMS_Spam_Detector.wsgi --log-file -

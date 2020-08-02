@@ -1,0 +1,16 @@
+asgiref==3.2.10
+click==7.1.2
+Django==3.0.8
+gunicorn==20.0.4
+joblib==0.16.0
+nltk==3.5
+numpy==1.19.1
+pickle-mixin==1.0.2
+pytz==2020.1
+regex==2020.7.14
+scikit-learn==0.23.1
+scipy==1.5.2
+sklearn==0.0
+sqlparse==0.3.1
+threadpoolctl==2.1.0
+tqdm==4.48.0
