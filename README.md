@@ -13,7 +13,7 @@ pip install -r requirements.txt
 ```python
  python manage.py runserver
 ```
-<br>
+
 That's it you can see your website running at localhost.
 ## Live Video of Web Application
 ![alt text](https://github.com/venugopalkadamba/SMS-Spam-Detector-WebApp/blob/master/final_video.gif)
