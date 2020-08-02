@@ -23,10 +23,11 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = '%)v8+!-3saf!!m5sm2rlsbd3mw20)k$r))vl*d292(sd(gi)%g'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = []
 
+ALLOWED_HOSTS = ['kvg-sms-spam-detector.herokuapp.com', '127.0.0.1']
 
 # Application definition
 
