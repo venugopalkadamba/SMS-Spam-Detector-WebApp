@@ -1,0 +1,51 @@
+{% extends 'spam_detector/main.html' %}
+{% block content %}
+
+{% for message in messages %}
+        {% if message.tags == 'error' %}
+            <div class="alert alert-danger">
+            <center><strong style="color: red;">{{ message }}</strong></center>
+            </div>
+        {% else %}
+            <div class="alert alert-success">
+                <center><strong style="color: green;">{{ message }}</strong></center>
+            </div>
+        {% endif %}
+    {% endfor %}
+
+    <div class="row">
+        <div class="col-md-2"></div>
+        <div class="col-md-8">
+            <center><p style="color: yellow;font-size: 25px; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">A Machine Learning and Natural Language Processing based web app developed using Django and deployed on Heroku.</p>
+            <p style="color: yellow;"><strong>Made with <span style="color: red;">&hearts;</span> by Venu Gopal Kadamba</strong></p></center>
+        </div>
+        <div class="col-md-2"></div>
+    </div>
+    
+<style>
+    .card{
+        box-shadow: 0 0 10px red;
+    }
+    .card:hover{
+        box-shadow: 0 0 25px red;
+    }
+</style>
+    
+<div class="row">
+    <div class="col-md-3"></div>
+    <div class="col-md-6">
+        <form class="card card-body form-horizontal" style="border: 1px solid black;" action="" method="POST">
+            {% csrf_token %}
+            <div class="form-group">
+                <textarea  style="border: 1px solid black;" class="form-control" rows="10" name="message" placeholder="Enter the Message"></textarea>
+            </div>
+            <center><input class="btn btn-info" type="submit" value="Predict"></center>
+        </form>
+        <center><p style="font-size: 20px;"><a href="https://www.github.com/venugopalkadamba" target="_blank"><span style="color: white !important;" class="fa fa-github"></span></a>&nbsp;&nbsp;
+            <a href="https://www.linkedin.com/in/venugopalkadamba" target="_blank" ><span style="color: white !important;" class="fa fa-linkedin"></span></a>
+            &nbsp;<a href="https://www.instagram.com/venugopal_2001" target="_blank" ><span style="color: white !important;" class="fa fa-instagram"></span></a>
+        </p></center>
+    </div>
+    <div class="col-md-3"></div>
+</div>
+{% endblock %}
