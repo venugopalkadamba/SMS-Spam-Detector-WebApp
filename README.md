@@ -13,4 +13,4 @@ pip install -r requirements.txt
 ```
 <br>
 That's it you can see your website running at localhost.<br>
-__Please do ⭐ the Repository if you liked my work.__
+<b>Please do ⭐ the Repository if you liked my work.</b>
