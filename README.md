@@ -12,5 +12,5 @@ pip install -r requirements.txt
  python manage.py runserver
 ```
 <br>
-That's it you can see your website running at localhost.
+That's it you can see your website running at localhost.<br>
 **Please do ⭐ the Repository if you liked my work.**
