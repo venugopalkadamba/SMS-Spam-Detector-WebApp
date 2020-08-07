@@ -1,5 +1,6 @@
 from django.shortcuts import render, redirect
 from django.contrib import messages
+from django.views.decorators import csrf_exempt
 
 import pickle
 import os
@@ -13,6 +14,7 @@ model = pickle.load(open(os.path.join(models_path, 'spam_classifier.pkl'), 'rb')
 
 
 # Create your views here.
+@csrf_exempt
 def index(request):
     if request.method == 'POST':
         message = request.POST['message']
